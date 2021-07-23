@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import { Container, Row, Col, Tabs,Tab } from 'react-bootstrap';
+import ShakaPlayerWrapper from './players/ShakaPlayerWrapper';
+import HlsPlayerWrapper from './players/HlsPlayerWrapper';
+import DashPlayerWrapper from './players/DashPlayerWrapper';
+import VideoJsPlayerWrapper from './players/VideoJsPlayerWrapper';
+
+//TODO Проверить все ли плееры могут работать со всеми типами данных
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <Container>
+        <Row>
+          <Col>
+            <Tabs defaultActiveKey="videoJs">
+              <Tab eventKey="shake" title="Shake Player">
+                <ShakaPlayerWrapper />
+              </Tab>
+              <Tab eventKey="hls" title="HLS Player">
+                <HlsPlayerWrapper />
+              </Tab>
+              <Tab eventKey="dash" title="DASH Player">
+                <DashPlayerWrapper />
+              </Tab>
+              <Tab eventKey="videoJs" title="VideoJS Player">
+                <VideoJsPlayerWrapper />
+              </Tab>
+            </Tabs>
+          </Col>
+        </Row>
+      </Container>
+    </AppWrapper>
   );
 }
+
+const AppWrapper = styled.div`
+  margin-top: 20px;
+`;
 
 export default App;
