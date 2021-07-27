@@ -7760,6 +7760,13 @@ mux.js@5.11.1:
   dependencies:
     "@babel/runtime" "^7.11.2"
 
+mux.js@^5.12.2:
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/mux.js/-/mux.js-5.12.2.tgz#cd823312f4bb69adb8b9c5f45635b4451066d6e6"
+  integrity sha512-9OY1lrFIo7FxMeIC6aLUftiNv97AztufDfi30N7qDll1Pcy7bCxlHztyHp1Ce0KQwy2XqchGeENPS4v1NJngHQ==
+  dependencies:
+    "@babel/runtime" "^7.11.2"
+
 nan@^2.12.1:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
@@ -11995,6 +12002,11 @@ ws@^7.2.3:
   version "7.4.3"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.3.tgz#1f9643de34a543b8edb124bdcbc457ae55a6e5cd"
   integrity sha512-hr6vCR76GsossIRsr8OLR9acVVm1jyfEWvhbNjtgPOrfvAlKzvyeg/P6r8RuDjRyrcQoPQT7K0DGEPc7Ae6jzA==
+
+xhook@^1.4.9:
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/xhook/-/xhook-1.4.9.tgz#5ebca6c7f239003c311b746b889081a82e9d4e78"
+  integrity sha512-7uGTRzCO1nMNtzClV0LHSo13vKlr7J9JE6njIMWHDSoub6MLOmam2OgZJESTvGjZpW68gnD69vlRipB6cjM0dg==
 
 xml-name-validator@^3.0.0:
   version "3.0.0"

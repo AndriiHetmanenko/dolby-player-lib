@@ -14,7 +14,7 @@ function App() {
       <Container>
         <Row>
           <Col>
-            <Tabs defaultActiveKey="videoJs">
+            <Tabs defaultActiveKey="shake">
               <Tab eventKey="shake" title="Shake Player">
                 <ShakaPlayerWrapper />
               </Tab>

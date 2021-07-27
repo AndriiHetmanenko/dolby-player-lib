@@ -2,10 +2,9 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Ref, useEffect, useRef } from 'react';
 import dashjs from 'dashjs';
+import { DASH_MANIFEST_URL } from '../config';
 
 export type TProps = {};
-
-const videoSrc = 'https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd';
 
 const DashPlayerWrapper: React.FC<TProps> = (props: TProps) => {
   const videoRef: Ref<HTMLVideoElement> = useRef(null);
@@ -14,7 +13,7 @@ const DashPlayerWrapper: React.FC<TProps> = (props: TProps) => {
     if (videoRef.current) {
       const player = dashjs.MediaPlayer().create();
 
-      player.initialize(videoRef.current, videoSrc)
+      player.initialize(videoRef.current, DASH_MANIFEST_URL, false)
     }
   });
 

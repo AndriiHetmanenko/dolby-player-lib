@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import { Ref, useEffect, useRef } from 'react';
 import videojs from 'video.js';
 import "video.js/dist/video-js.css";
+import { HLS_MANIFEST_URL } from '../config';
 
 export type TProps = {};
-
-const videoSrc = 'https://d2zihajmogu5jn.cloudfront.net/big-buck-bunny/master.m3u8';
 
 const VideoJsPlayerWrapper: React.FC<TProps> = (props: TProps) => {
   const videoRef: Ref<HTMLVideoElement> = useRef(null);
@@ -18,7 +17,7 @@ const VideoJsPlayerWrapper: React.FC<TProps> = (props: TProps) => {
         fluid: true,
         sources: [
           {
-            src: videoSrc,
+            src: HLS_MANIFEST_URL,
             type: 'application/x-mpegURL',
           }
         ],

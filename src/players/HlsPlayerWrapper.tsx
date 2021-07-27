@@ -2,10 +2,9 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Ref, useEffect, useRef } from 'react';
 import Hls from 'hls.js';
+import { HLS_MANIFEST_URL } from '../config';
 
 export type TProps = {};
-
-const videoSrc = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
 
 const HlsPlayerWrapper: React.FC<TProps> = (props: TProps) => {
   const videoRef: Ref<HTMLVideoElement> = useRef(null);
@@ -14,7 +13,7 @@ const HlsPlayerWrapper: React.FC<TProps> = (props: TProps) => {
     if (Hls.isSupported() && videoRef.current) {
       const hls = new Hls();
 
-      hls.loadSource(videoSrc);
+      hls.loadSource(HLS_MANIFEST_URL);
       hls.attachMedia(videoRef.current);
     }
   });
