@@ -6,8 +6,6 @@ import HlsPlayerWrapper from './players/HlsPlayerWrapper';
 import DashPlayerWrapper from './players/DashPlayerWrapper';
 import VideoJsPlayerWrapper from './players/VideoJsPlayerWrapper';
 
-//TODO Проверить все ли плееры могут работать со всеми типами данных
-
 function App() {
   return (
     <AppWrapper>

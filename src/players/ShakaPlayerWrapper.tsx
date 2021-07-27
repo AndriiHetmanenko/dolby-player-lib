@@ -3,7 +3,7 @@ import ShakaPlayer from 'shaka-player-react';
 import muxjs from 'mux.js';
 import styled from 'styled-components';
 import 'shaka-player/dist/controls.css';
-import { HLS_MANIFEST_URL } from '../config';
+import { HLS_MANIFEST_URL } from '../core/config';
 
 //MuxJS needs for launch HLS format manifest
 declare global {

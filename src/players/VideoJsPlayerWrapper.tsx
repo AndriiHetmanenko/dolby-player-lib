@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Ref, useEffect, useRef } from 'react';
 import videojs from 'video.js';
 import "video.js/dist/video-js.css";
-import { HLS_MANIFEST_URL } from '../config';
+import { HLS_MANIFEST_URL } from '../core/config';
 
 export type TProps = {};
 

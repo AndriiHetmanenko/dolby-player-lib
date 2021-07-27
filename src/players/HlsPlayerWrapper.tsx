@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Ref, useEffect, useRef } from 'react';
 import Hls from 'hls.js';
-import { HLS_MANIFEST_URL } from '../config';
+import { HLS_MANIFEST_URL } from '../core/config';
 
 export type TProps = {};
 
